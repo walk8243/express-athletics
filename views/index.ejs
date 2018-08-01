@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/css/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('common/_head', {title: title}) %>
+<%- include('common/_header', {title: title}) %>
+
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<%- include('common/_footer') %>
+<%- include('common/_foot') %>
