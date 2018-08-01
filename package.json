@@ -1,0 +1,32 @@
+{
+  "name": "express-athletics",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "node-sass": "^4.9.2",
+    "uglify-js": "^3.4.6"
+  },
+  "description": "Expressを使って陸上競技協会用のサイト作成",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walk8243/express-athletics.git"
+  },
+  "keywords": [],
+  "author": "walk8243 (https://qiita.com/walk8243)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/walk8243/express-athletics/issues"
+  },
+  "homepage": "https://github.com/walk8243/express-athletics#readme"
+}
