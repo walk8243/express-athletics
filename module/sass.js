@@ -16,10 +16,10 @@ const sassCond  = new RegExp('.+\\.(sass|scss)'),
       renderingSassCond = new RegExp('^[^\\_].+\\.(sass|scss)');
 
 
-async function getSassFiles(path = './public/css') {
+async function getSassFiles(path = './sass') {
   return await func.searchCriteriaFile(path, sassCond);
 }
-async function getRenderingSassFiles(path = './public/css') {
+async function getRenderingSassFiles(path = './sass') {
   return await func.searchCriteriaFile(path, renderingSassCond);
 }
 
@@ -29,13 +29,14 @@ function renderSass(file) {
     throw new ReferenceError('Path doesn\'t exist or isn\'t file.');
   }
 
+  var outputFilename = file.replace(/\.(sass|scss)/, '.css').replace("/sass", "/public/css");
   nodeSass.render({
     file: file,
     outputStyle: "compressed",
-    outputFile: file.replace(/\.(sass|scss)/, '.css')
+    outputFile: outputFilename
   }, (err, result) => {
     if(err) throw err;
-    fs.writeFile(file.replace(/\.(sass|scss)/, '.css'), result.css, err => {
+    fs.writeFile(outputFilename, result.css, err => {
       if(err) throw err;
     });
   });
