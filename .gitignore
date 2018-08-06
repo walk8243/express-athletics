@@ -1,6 +1,3 @@
-
-# Created by https://www.gitignore.io/api/node,sass
-
 ### Node ###
 # Logs
 logs
@@ -81,6 +78,5 @@ typings/
 *.css.map
 *.sass.map
 *.scss.map
-
-
-# End of https://www.gitignore.io/api/node,sass
+public/css/*
+!public/css/empty

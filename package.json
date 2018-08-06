@@ -1,6 +1,6 @@
 {
   "name": "express-athletics",
-  "version": "1.0.2",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -15,7 +15,6 @@
     "node-sass": "^4.9.2",
     "uglify-js": "^3.4.6"
   },
-  "description": "Expressを使って陸上競技協会用のサイト作成",
   "main": "app.js",
   "devDependencies": {},
   "repository": {
@@ -28,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/walk8243/express-athletics/issues"
   },
-  "homepage": "https://github.com/walk8243/express-athletics#readme"
+  "homepage": "https://github.com/walk8243/express-athletics#readme",
+  "description": ""
 }
