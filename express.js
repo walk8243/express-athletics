@@ -16,7 +16,14 @@ function router() {
 }
 
 
+function render(res, views, locals = {}) {
+  locals.app = configFile.app;
+  res.render(views, locals);
+}
+
+
 module.exports = express = {
   config,
+  render,
   router
 };
