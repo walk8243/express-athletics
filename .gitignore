@@ -80,3 +80,7 @@ typings/
 *.scss.map
 public/css/*
 !public/css/empty
+
+### config ###
+config/**
+!config/default.yml
