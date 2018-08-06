@@ -1,0 +1,3 @@
+app:
+  title: "Express Athletics"
+  port: 3000
